@@ -17,6 +17,8 @@ public class PatroonTest
     {
         p1 = new Patroon('A');
         p2 = new Patroon('B','?');
+        p3 = new Patroon('C');
+        p4 = new Patroon('D');
     }	
     
     @Test 
@@ -63,5 +65,17 @@ public class PatroonTest
     public void teken_retourneertPatroonB()
     {
         Assertions.assertEquals("Patroon B\n??????????\n ?????????\n  ????????\n   ???????\n    ??????\n     ?????\n      ????\n       ???\n        ??\n         ?\n",p2.teken());
+    }
+    
+    @Test 
+    public void teken_retourneertPatroonC()
+    {
+        Assertions.assertEquals("Patroon C\n**********\n*********\n********\n*******\n******\n*****\n****\n***\n**\n*\n",p3.teken());
+    }
+    
+    @Test 
+    public void teken_retourneertPatroonD()
+    {
+        Assertions.assertEquals("Patroon D\n         *\n        **\n       ***\n      ****\n     *****\n    ******\n   *******\n  ********\n *********\n**********\n",p4.teken());
     }
 }

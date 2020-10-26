@@ -1,4 +1,5 @@
 package domein;
+
 // NIET JUIST
 public class Patroon {
 	// attributen
@@ -60,7 +61,7 @@ public class Patroon {
 
 	// constructoren
 	public Patroon(char type) {
-		setType(type);
+		this(type, ' ');
 	}
 
 	public Patroon(char type, char opvulteken) {
@@ -69,58 +70,89 @@ public class Patroon {
 	}
 
 	public String teken() {
-		return tekenPatroonD();
+		switch (type) {
+		case 'A':
+			return tekenPatroonA();
+		case 'B':
+			return tekenPatroonB();
+		case 'C':
+			return tekenPatroonC();
+		case 'D':
+			return tekenPatroonD();
+		}
+		return null;
 
 	}
 
 	private String tekenPatroonA() {
-		for (int rij = 1; rij <= 10; rij++) { // zorgt voor 10 rijen
+		String string = "Patroon A";
+		for (int rij = 0; rij <= 10; rij++) { // zorgt voor 10 rijen
 			for (int kol = 1; kol <= rij; kol++) {
 				System.out.print(opvulteken);
+				string += opvulteken;
+
 			}
 			System.out.println();
+			string += "\n";
 
-		} // tekent Patroon a
-		return tekenPatroonA();
+		}
+		return string;
 	}
 
 	private String tekenPatroonB() {
+		StringBuilder sBuilder = new StringBuilder("Patroon B\n");
+		String string = "Patroon B\n";
 		for (int rij = 1; rij <= 10; rij++) {
 			for (int spatie = 1; spatie <= rij - 1; spatie++) {
 				System.out.print(' ');
+				sBuilder.append(" ");
+
 			}
 			for (int ster = 10; ster >= rij; ster--) {
 				System.out.print(opvulteken);
+				sBuilder.append(opvulteken);
+
 			}
 			System.out.println();
+			sBuilder.append("\n");
 
 		}
-		return tekenPatroonB();
+		return string;
 	}
 
 	private String tekenPatroonC() {
+		String string = "Patroon C\n";
 		for (int rij = 1; rij <= 10; rij++) {
 			for (int kol = 10; kol >= rij; kol--) {
 				System.out.print(opvulteken);
+				string += opvulteken;
+
 			}
 			System.out.println();
+			string += "\n";
 
 		}
-		return tekenPatroonC();
+		return string;
 	}
 
 	private String tekenPatroonD() {
-		for (int rij = 1; rij <= 10; rij++) {
-			for (int spatie = 10; spatie >= rij; spatie--) {
+		String string = "Patroon D\n";
+		for (int i = 1; i <= 10; i++) {
+			for (int s = 0; s < 10 - i; s++) {
 				System.out.print(' ');
+				string += " ";
+
 			}
-			for (int i = 10; i >= rij; i--) {
+			for (int c = 0; c < i; c++) {
 				System.out.print(opvulteken);
+				string += opvulteken;
+
 			}
 			System.out.println();
-
+			string += "\n";
 		}
-		return tekenPatroonD();
+
+		return string;
 	}
 
 }
