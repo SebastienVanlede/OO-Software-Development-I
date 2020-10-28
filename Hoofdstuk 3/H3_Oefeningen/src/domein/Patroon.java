@@ -117,7 +117,7 @@ public class Patroon {
 			sBuilder.append("\n");
 
 		}
-		return string;
+		return sBuilder.toString();
 	}
 
 	private String tekenPatroonC() {
