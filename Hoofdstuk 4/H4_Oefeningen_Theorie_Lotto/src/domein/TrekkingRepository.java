@@ -15,4 +15,12 @@ public class TrekkingRepository {
 	public void voegTrekkingToe(Trekking trekking) {
 		trekkingen.add(trekking);
 	}
+
+	public Trekking geefTrekking(String naam) {
+		for (Trekking trekking : trekkingen) {
+			if (trekking.getNaam().equals(naam))
+				return trekking;
+		}
+		return null; // in het geval dat er geen trekking aanwezig is met naam naam
+	}
 }
