@@ -3,7 +3,7 @@ Oefeningen Software Development I\
 Dit zijn mijn eigen antwoorden, niet alles is exact zoals we het geleerd hebben / in modelopl staan.\
 Gecontroleerd doormiddel van modeloplossingen / prof
 
-<strong>Inhoudstabel:\
+<strong>Inhoudstabel:<\strong>\
 Hoofdstuk 1: Introductie Java\
 Hoofdstuk 2: Controlestructuren en operatoren\
 Hoofdstuk 3: Klasse en object\
