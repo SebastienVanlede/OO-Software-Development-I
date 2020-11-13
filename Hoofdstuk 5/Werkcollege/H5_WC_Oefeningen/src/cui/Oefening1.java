@@ -37,6 +37,7 @@ public class Oefening1 {
 				System.out.printf("%8.2f", element);
 			} // mogelijke oplossing
 		}
+		input.close();
 
 	}
 

@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class Oefening4 {
 
-	@SuppressWarnings({ "resource", "unused" })
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		double[] maanden = new double[12];
@@ -27,6 +26,7 @@ public class Oefening4 {
 		} else {
 			System.out.printf("In volgende maanden werd meer uitgegeven dan het gemiddelde %s: ", resultaat);
 		}
+		input.close();
 	}
 
 }
