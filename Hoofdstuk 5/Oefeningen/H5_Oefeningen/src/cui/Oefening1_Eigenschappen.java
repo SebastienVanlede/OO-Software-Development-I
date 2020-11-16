@@ -30,14 +30,18 @@ public class Oefening1_Eigenschappen {
 
 		if (posEig.isEmpty()) {
 			System.out.print("Geen positieve eigenschappen");
-			System.out.print("\nNegatieve eigenschappen: " + String.valueOf(negEig));
+			System.out.print("\nNegatieve eigenschappen: "
+					+ String.valueOf(negEig).substring(1, String.valueOf(negEig).length() - 1));
 
 		} else if (negEig.isEmpty()) {
-			System.out.print("Positieve eigenschappen: " + String.valueOf(posEig));
+			System.out.print("Positieve eigenschappen: "
+					+ String.valueOf(posEig).substring(1, String.valueOf(posEig).length() - 1));
 			System.out.print("\nGeen negatieve eigenschappen");
 		} else {
-			System.out.print("Positieve eigenschappen: " + String.valueOf(posEig));
-			System.out.print("\nNegatieve eigenschappen: " + String.valueOf(negEig));
+			System.out.print("Positieve eigenschappen: "
+					+ String.valueOf(posEig).substring(1, String.valueOf(posEig).length() - 1));
+			System.out.print("\nNegatieve eigenschappen: "
+					+ String.valueOf(negEig).substring(1, String.valueOf(negEig).length() - 1));
 
 		}
 
