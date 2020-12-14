@@ -11,4 +11,4 @@ Hoofdstuk 4: Ontwikkel een Java-applicatie\
 Hoofdstuk 5: ArrayList en Arrays\
 Hoofdstuk 6: Methodes - next level\
 Hoofdstuk 7: Pijlers van het OO\
-Hoofdstuk 8: Testen\
+Hoofdstuk 8: Testen
