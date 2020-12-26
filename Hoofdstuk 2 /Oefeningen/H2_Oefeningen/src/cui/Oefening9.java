@@ -3,28 +3,25 @@ package cui;
 import java.util.Scanner;
 
 public class Oefening9 {
+     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int i = 1, posGetal, getal = 0;
 
-	public static void main(String[] args) {
-		Scanner input = new Scanner(System.in);
-		int getal, counter = 0;
+        do {
+            System.out.print("Geef een strikt positief getal in: ");
+            posGetal = scanner.nextInt();
+        } while (posGetal <= 0);
 
-		System.out.print("Geef een strikt positief geheel getal in: ");
-		getal = input.nextInt();
+        while (posGetal != 1) {
+            if ((posGetal % 2) == 0) {
+                posGetal /= 2;
+            } else {
+                posGetal *= 3;
+                posGetal++;
+            }
+            getal++;
+        }
 
-		do {
-			if (getal % 2 == 0) {
-				getal = getal / 2;
-				counter++;
-
-			} else {
-				getal = (getal * 3) + 1;
-				counter++;
-
-			}
-
-		} while (getal != 1);
-		System.out.printf("Het getal wijzigt %d keer", counter);
-
-	}
-
+        System.out.printf("Het getal wijzigt %d %s", getal, getal > 1 ? "keren" : "keer");
+    }
 }
