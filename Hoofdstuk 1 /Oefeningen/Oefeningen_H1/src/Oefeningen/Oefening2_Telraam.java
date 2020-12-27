@@ -10,7 +10,7 @@ public class Oefening2_Telraam {
 		System.out.printf("Getal - 1 = %d%n", getal - 1);
 
 		/*
-		// Even shorter:
+		// Shorter:
 		System.out.printf("Getal = %d%n" +
                 "Getal + 1 = %d%n" +
                 "Getal - 1 = %d%n", 
