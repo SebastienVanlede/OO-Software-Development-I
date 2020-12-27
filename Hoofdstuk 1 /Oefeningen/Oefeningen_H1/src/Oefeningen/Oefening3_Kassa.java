@@ -11,14 +11,12 @@ public class Oefening3_Kassa {
 		System.out.printf("Terug = %d%n", terug);
 		
 		/*
-		
-		// Korter:
+		// Shorter:
 		terug = ontvangenBedrag - teBetalen;
        		System.out.printf("Te betalen = %d%n" +
                 "Ontvangen bedrag = %d%n" +
                 "Terug = %d%n", 
 		teBetalen, ontvangenBedrag, terug);
-
 		*/
 	}
 
