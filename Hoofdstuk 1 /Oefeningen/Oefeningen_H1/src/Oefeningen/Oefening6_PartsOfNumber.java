@@ -22,7 +22,7 @@ public class Oefening6 {
 		System.out.printf("%s%n%d%s%n%d%s%n%d%s%n%d%s%n", "Het getal bestaat uit:", duizendtallen, " duizendtallen",
 				honderdtallen, " hondertallen", tientallen, " tientallen", eenheden, " eenheden");
 	/*
-	// Other:
+	// Other way (when uncommenting it will interfere with above):
 	Scanner scanner = new Scanner(System.in);
         int inputNumber;
         
