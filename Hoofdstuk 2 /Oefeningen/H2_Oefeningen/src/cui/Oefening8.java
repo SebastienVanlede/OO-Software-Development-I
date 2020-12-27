@@ -24,6 +24,30 @@ public class Oefening8 {
 				break;
 		}
 		System.out.printf("Er zijn %d getallen deelbaar door %d",counter,deler);
+		
+		/*
+		// Other way (uncommenting might cause interference):
+		Scanner scanner = new Scanner(System.in);
+		int i = 1, deler, getal = 0, aantalDeelbaar = 0;
+
+		do {
+		    System.out.print("Geef een strikt positieve deler in: ");
+		    deler = scanner.nextInt();
+		} while (deler <= 0);
+
+		do {
+		    System.out.printf("Geef postief getal %d in (Stoppen met -1):", i);
+		    getal = scanner.nextInt();
+		    if (getal > 0) {
+			if (getal % deler == 0) {
+			    aantalDeelbaar++;
+			}
+			i++;
+		    }
+		} while (getal != -1);
+
+		System.out.printf("Er %s %d %s deelbaar door %d%n", (aantalDeelbaar > 1) ? "zijn" : "is", aantalDeelbaar, (aantalDeelbaar > 1) ? "getallen" : "getal", deler);
+		*/
 	}
 
 }
