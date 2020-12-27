@@ -26,7 +26,7 @@ public class Oefening2 {
 		
 		/*
 		// Shorter (for the if elses and the print):
-		String positiefNegatief = input >= 0 ? (input == 0 ? "nul" : "strikt positief") : "strikt negatief";
+		String positiefNegatief = getal >= 0 ? (getal == 0 ? "nul" : "strikt positief") : "strikt negatief";
 
         	System.out.printf("Het ingegeven getal is %s en werd verminderd met 10.%n" +
                 "Het heeft nu een waarde van: %d ", positiefNegatief, waarde);
