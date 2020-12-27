@@ -22,6 +22,28 @@ public class Oefening5 {
 		}
 		System.out.printf("Het op één na grootse getal is %d", tweede);
 
+		/*
+		// Other way (uncommenting can cause interference):
+		Scanner scanner = new Scanner(System.in);
+		int i, getal;
+
+		ArrayList<Integer> intArr = new ArrayList<>();
+
+		for (i = 1; i < 11; i++) {
+		    do {
+			System.out.printf("Geef getal %d in: ", i);
+			getal = scanner.nextInt();
+		    } while (getal < -100 || getal > 100);
+		    intArr.add(getal);
+		}
+
+		getal = Integer.MIN_VALUE;
+		for (i = 0; i < intArr.size(); i++) {
+		    getal = Math.max(getal, intArr.get(i));
+		}
+
+		System.out.printf("Grootste: " + getal);
+		*/
 	}
 
 }
