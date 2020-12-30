@@ -61,8 +61,8 @@ public class Auto {
 	}
 	
 	/*
-	// Other way (uncommenting can cause interference):
-	// ------------------- attribute -------------------
+	    // Other way (uncommenting can cause interference):
+	    // ------------------- attribute -------------------
 	    private String kleur, merk, nrplaat;
 	    private int snelheid;
 
