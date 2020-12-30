@@ -10,7 +10,7 @@ public class PatroonApplicatie {
 		System.out.print(patroon.teken());
 		
 		/*
-		// Other way (uncommenting can cause interference):
+		// Other way (uncommenting => interference):
 		Patroon patroon;
 
 		for (char alphabet = 'A'; alphabet <= 'D'; alphabet++) {
