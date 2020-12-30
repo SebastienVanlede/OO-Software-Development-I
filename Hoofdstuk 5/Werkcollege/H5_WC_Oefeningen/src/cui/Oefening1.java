@@ -8,7 +8,6 @@ public class Oefening1 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		double input;
-
 		ArrayList<Double> listPos = new ArrayList<>();
 
 		do {
@@ -27,6 +26,7 @@ public class Oefening1 {
 			System.out.printf("%8.2f", listPos.get(index));
 		    }
 		}
+		
 		scanner.close();
 
 	}
