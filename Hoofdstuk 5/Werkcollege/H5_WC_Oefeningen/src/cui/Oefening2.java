@@ -31,6 +31,23 @@ public class Oefening2 {
 		}
 		input.close();
 
+		/*
+		Other way (uncommenting can cause interference):
+		Scanner scanner = new Scanner(System.in);
+		int input;
+
+		do {
+		    System.out.print("Geef een getal van 8 cijfers: ");
+		    input = scanner.nextInt();
+		} while (Integer.toString(input).length() != 8);
+
+		System.out.printf("Alle verschillende cijfers in dit getal (in volgorde van voorkomen) zijn: %n");
+		String[] arrOfStr = Integer.toString(input).split("");
+
+		for (String str: arrOfStr) {
+		    System.out.printf("%s ", str);
+		}
+		*/
 	}
 
 }
