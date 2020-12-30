@@ -1,8 +1,9 @@
 package cui;
 
 import java.util.Scanner;
-
 import domein.Auto;
+import java.util.ArrayList;
+import com.sun.xml.internal.bind.v2.runtime.property.StructureLoaderBuilder;
 
 public class AutoApplicatie {
 
@@ -46,6 +47,39 @@ public class AutoApplicatie {
 
 		System.out.printf("Aantal geregistreerde auto's: %d%nAantal grijze auto's: %d%n", geregistreerd, grijs);
 
+		/*
+		// Other way (uncommenting can cause interference):
+		Scanner scanner = new Scanner(System.in);
+
+		ArrayList<Auto> autos = new ArrayList<Auto>();
+		int intInput, grijzeAutos = 0;
+		String stringInput = "";
+
+
+		do {
+		    System.out.printf("Registratie auto%n (1) Auto (alles standaard)%n (2) Auto met gekozen kleur");
+		    System.out.printf("%n%nWens je nog een auto te registreren (3 om te stoppen): ");
+		    intInput = scanner.nextInt();
+
+		    if (intInput == 1) {
+			autos.add(new Auto());
+		    }
+		    if (intInput == 2) {
+			System.out.printf("Geef een kleur: ");
+			stringInput = scanner.next();
+			autos.add(new Auto(stringInput));
+		    }
+		} while (intInput != 3);
+
+		for (int i = 0; i < autos.size(); i++) {
+		    Auto auto = autos.get(i);
+		    if (auto.getKleur().equals("grijs")) {
+			grijzeAutos++;
+		    }
+		}
+		System.out.printf("Aantal geregistreerde auto's: %d%n" +
+			"Aantal grijze auto's: %d", autos.size(), grijzeAutos);
+		*/
 	}
 
 }
