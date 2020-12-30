@@ -5,39 +5,29 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Oefening1 {
-
-	@SuppressWarnings("resource")
 	public static void main(String[] args) {
-		// invoer double stop -1
-		Scanner input = new Scanner(System.in);
-		double bedrag;
-		List<Double> deLijst = new ArrayList<>();
+		Scanner scanner = new Scanner(System.in);
+		double input;
 
-		System.out.print("Geef positief bedrag, stop met -1: ");
-		bedrag = input.nextDouble();
+		ArrayList<Double> listPos = new ArrayList<>();
 
-		while (bedrag != -1) {
-			if (bedrag >= 0) {
-				deLijst.add(bedrag);
-			}
+		do {
+		    System.out.print("Geef positief bedrag, stop met -1: ");
+		    input = scanner.nextDouble();
+		    if (input >= 0) {
+			listPos.add(input);
+		    }
+		} while (input != -1);
 
-			System.out.print("Geef positief bedrag, stop met -1: ");
-			bedrag = input.nextDouble();
-		}
-		if (deLijst.isEmpty()) {
-			System.out.println("De lijst is leeg!");
+		if (listPos.isEmpty()) {
+		    System.out.println("De lijst is leeg!");
 		} else {
-			System.out.print("De lijst met bedragen: ");
-			for (int index = 0; index < deLijst.size(); index++) {
-				System.out.printf("%8.2f", deLijst.get(index));
-			} // mogelijke oplossing
-
-			System.out.print("De lijst met bedragen: ");
-			for (double element : deLijst) {
-				System.out.printf("%8.2f", element);
-			} // mogelijke oplossing
+		    System.out.print("De lijst met bedragen: ");
+		    for (int index = 0; index < listPos.size(); index++) {
+			System.out.printf("%8.2f", listPos.get(index));
+		    }
 		}
-		input.close();
+		scanner.close();
 
 	}
 
