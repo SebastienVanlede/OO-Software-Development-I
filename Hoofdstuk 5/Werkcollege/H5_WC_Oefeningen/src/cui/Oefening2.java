@@ -32,7 +32,7 @@ public class Oefening2 {
 		input.close();
 
 		/*
-		Other way (uncommenting can cause interference):
+		//Other way (uncommenting can cause interference):
 		Scanner scanner = new Scanner(System.in);
 		int input;
 
