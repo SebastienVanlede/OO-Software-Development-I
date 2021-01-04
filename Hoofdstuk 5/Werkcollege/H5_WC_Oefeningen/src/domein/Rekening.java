@@ -5,22 +5,17 @@ public class Rekening {
 	private double saldo;
 	private String houder;
 
-
-
 	public Rekening() {
 		this(123456789, "onbekend");
-
 	}
 
 	public Rekening(long rekeningnummer) {
 		this(rekeningnummer, "onbekend");
-
 	}
 
 	public Rekening(long rekeningnummer, String houder) {
 		setRekeningnummer(rekeningnummer);
 		setHouder(houder);
-
 	}
 
 	public boolean stortOp(double bedrag) {
