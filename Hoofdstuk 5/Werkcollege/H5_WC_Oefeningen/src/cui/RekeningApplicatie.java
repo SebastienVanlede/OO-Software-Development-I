@@ -22,6 +22,7 @@ public class RekeningApplicatie {
 		}
 		
 		double totaal = 0;
+		
 		for (Rekening rekening : rekeningen) {
 			System.out.printf("Rekening %d van %s bevat %.2f%n", rekening.getRekeningnummer(), rekening.getHouder(), rekening.getSaldo());
 			totaal += rekening.getSaldo();
