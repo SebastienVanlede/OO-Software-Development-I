@@ -2,7 +2,7 @@
 <strong>DISCLAIMER: Gelieve geen code van mij te kopiëren op het examen ivm fraude!</strong>\
 Oefeningen Software Development I\
 
-<strong>Inhoudstabel:\
+<strong>Inhoudstabel:</strong>\
 Hoofdstuk 1: Introductie Java\
 Hoofdstuk 2: Controlestructuren en operatoren\
 Hoofdstuk 3: Klasse en object\
