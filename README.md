@@ -1,5 +1,5 @@
 # OO-Software-Development-I
-<strong>DISCLAIMER: Gelieve geen code van mij te kopiëren op het examen ivm fraude!\</strong>
+<strong>DISCLAIMER: Gelieve geen code van mij te kopiëren op het examen ivm fraude!</strong>\
 Oefeningen Software Development I\
 
 <strong>Inhoudstabel:\
