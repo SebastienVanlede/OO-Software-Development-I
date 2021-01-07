@@ -44,7 +44,39 @@ public class Oefening3 {
 					postcode);
 			break;
 		}
+		
+		/*
+		switch (postcode) {
+		    case 1000:
+			stad = "Brussel";
+			break;
+		    case 2000:
+			stad = "Antwerpen";
+			break;
+		    case 2300:
+			stad = "Turnhout";
+			break;
+		    case 8500:
+			stad = "Kortrijk";
+			break;
+		    case 9000:
+			stad = "Gent";
+			break;
+		    case 9200:
+			stad = "Dendermonde";
+			break;
+		    case 9300:
+			stad = "Aalst";
+			break;
+		    case 9700:
+			stad = "Oudenaarde";
+			break;
+		    default:
+			stad = ". We hebben deze stad nog niet toegevoegd aan ons systeem";
+        	}
 
+		System.out.printf("%nPostnummer %d komt overeen met de stad %s.", postcode, stad);
+		*/
 	}
 
 }

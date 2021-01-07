@@ -13,6 +13,7 @@ public class Oefening5 {
 			System.out.printf("Geef getal %d: ", index+1);
 			getallen[index] = input.nextInt();
 		}
+		
 		System.out.println("Geef nog een extra getal: ");
 		extraGetal = input.nextInt();
 		

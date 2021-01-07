@@ -16,6 +16,7 @@ public class Oefening11 {
 				gem += table[rij][kolom];
 			}
 		}
+		
 		gem /= table.length * table[0].length;
 
 		String uitvoer = String.format("gemiddelde is %.1f", gem);

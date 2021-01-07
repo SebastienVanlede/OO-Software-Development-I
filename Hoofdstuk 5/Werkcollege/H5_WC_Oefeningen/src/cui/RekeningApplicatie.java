@@ -9,10 +9,11 @@ public class RekeningApplicatie {
 		Rekening[] rekeningen = new Rekening[saldi.length];
 		String houder;
 		
-//		ook mogelijk
-//		final int aantalRekeningen = saldi.length;
-//		Rekening[] rekeningen = new Rekening[aantalRekeningen];
-
+		/*
+		// Ook mogelijk:
+		final int aantalRekeningen = saldi.length;
+		Rekening[] rekeningen = new Rekening[aantalRekeningen];
+		*/
 
 		for (int index = 0; index < saldi.length; index++) {
 			houder = String.format("%c", 'A' + index);//'A'=65
@@ -21,15 +22,13 @@ public class RekeningApplicatie {
 		}
 		
 		double totaal = 0;
+		
 		for (Rekening rekening : rekeningen) {
 			System.out.printf("Rekening %d van %s bevat %.2f%n", rekening.getRekeningnummer(), rekening.getHouder(), rekening.getSaldo());
 			totaal += rekening.getSaldo();
 		}
 		
 		System.out.printf("%nHet gemiddelde saldo van deze %d rekeningen bedraagt: %.2f euro", rekeningen.length, totaal / rekeningen.length);
-		
-		
-
 	}
 
 }
