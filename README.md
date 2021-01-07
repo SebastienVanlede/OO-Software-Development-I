@@ -1,7 +1,5 @@
 # OO-Software-Development-I
 Oefeningen Software Development I\
-Dit zijn mijn eigen antwoorden, niet alles is exact zoals we het geleerd hebben / in modelopl staan.\
-Gecontroleerd doormiddel van modeloplossingen / prof
 
 <strong>Inhoudstabel:\
 Hoofdstuk 1: Introductie Java\
